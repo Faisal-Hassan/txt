@@ -9,6 +9,12 @@ $white: #ffffff;
 $blue: #0645AD;
 $light-blue: #3366BB;
 
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
 /* universal */
 
 html {
@@ -128,4 +134,16 @@ footer {
 
 .navbar-fixed-bottom {
     margin: 10px 200px;
-  }
+}
+
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+  
+  
+  
