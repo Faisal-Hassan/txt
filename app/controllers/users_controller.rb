@@ -11,10 +11,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "Account has been created successfully"
       # render 'root'
     else
-      flash[:notice] = "Fix the errors"
       render 'new'
     end
   end
