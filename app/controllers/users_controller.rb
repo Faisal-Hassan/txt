@@ -14,6 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the TxT app."
       redirect_to @user
     else
+      flash[:danger] = "Please try again."
       render 'new'
     end
   end
